@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'python-compiler-7ak4.onrender.com']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://python-compiler-7ak4.onrender.com',
+    'http://127.0.0.1:8000',
+]
 
 # Application definition
 
