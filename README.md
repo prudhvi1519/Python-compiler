@@ -34,7 +34,7 @@ An interactive Python code editor and compiler built with Django and CodeMirror.
 
 3. Navigate to the project directory:  
    ```bash
-   cd Python-compiler
+   cd "Python Compiler"
    ```
 
 5. Create and activate a virtual environment (recommended):  
