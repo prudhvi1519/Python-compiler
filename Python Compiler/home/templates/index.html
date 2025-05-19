@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Python Compiler</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css">
+    <link rel="stylesheet" href="{% static 'css/compiler.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/python/python.min.js"></script>
+</head>
+
+<body>
+    <h2><strong style="color: green;">Prudhvi's</strong> Python Compiler</h2>
+    <form action="/runcode" method="post">
+        {% csrf_token %}
+        <div class="split-container">
+            <!-- Left side: Code Area -->
+            <div class="left-side">
+                <label for="codearea">Code Area</label>
+                <textarea id="codearea" name="codearea">{{ code }}</textarea>
+            </div>
+
+            <!-- Spacer for mobile -->
+            <div class="spacer mobile-only"></div>
+
+            <!-- Right side: User Input + Output -->
+            <div class="right-side">
+                <div>
+                    <label for="userinput">User Input</label>
+                    <textarea id="userinput" name="userinput">{{ userinput }}</textarea>
+                    <div class="spacer"></div>
+                </div>
+                <div>
+                    <label for="output">Output</label>
+                    <textarea id="output" name="output" readonly>{{ output }}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div style="text-align: center;">
+            <button type="submit">Run Code</button>
+        </div>
+    </form>
+
+    <script src="{% static 'js/compiler.js' %}"></script>
+
+</body>
+
+</html>
