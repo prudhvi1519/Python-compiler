@@ -29,7 +29,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://python-compiler-7ak4.onrender.com',
+    'https://python-compiler-b5hx.onrender.com',
     'http://127.0.0.1:8000',
 ]
 
