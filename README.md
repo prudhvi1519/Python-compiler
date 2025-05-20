@@ -10,7 +10,7 @@ An interactive Python code editor and compiler built with Django and CodeMirror.
 - **Django**: Python web framework powering the backend.
 - **CodeMirror**: A versatile code editor implemented in JavaScript for syntax highlighting and code editing.
 - **HTML/CSS/JavaScript**: Frontend for layout, styling, and interactivity.
-- **Bootstrap (optional)**: For responsive design (if you want to add it later).
+- **Bootstrap**: For responsive design.
 - **Python**: The language being compiled and executed.
 
 ---
@@ -34,7 +34,7 @@ An interactive Python code editor and compiler built with Django and CodeMirror.
 
 3. Navigate to the project directory:  
    ```bash
-   cd Python-compiler
+   cd "Python Compiler"
    ```
 
 5. Create and activate a virtual environment (recommended):  
@@ -48,7 +48,7 @@ An interactive Python code editor and compiler built with Django and CodeMirror.
    ```bash
    pip install -r requirements.txt
    ```
-   (If you don't have requirements.txt, install Django manually: `pip install django`)
+   > (If you don't have requirements.txt, install Django manually: `pip install django`)
 
 8. Run migrations:
    ```bash
@@ -93,4 +93,4 @@ An interactive Python code editor and compiler built with Django and CodeMirror.
 ---
 
 ## 📜 License
-This project is open-source and available under the MIT License.
+This project is open-source and available under the **MIT License**.
