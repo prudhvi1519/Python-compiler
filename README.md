@@ -48,7 +48,7 @@ An interactive Python code editor and compiler built with Django and CodeMirror.
    ```bash
    pip install -r requirements.txt
    ```
-   (If you don't have requirements.txt, install Django manually: `pip install django`)
+   > (If you don't have requirements.txt, install Django manually: `pip install django`)
 
 8. Run migrations:
    ```bash
