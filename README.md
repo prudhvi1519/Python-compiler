@@ -10,7 +10,7 @@ An interactive Python code editor and compiler built with Django and CodeMirror.
 - **Django**: Python web framework powering the backend.
 - **CodeMirror**: A versatile code editor implemented in JavaScript for syntax highlighting and code editing.
 - **HTML/CSS/JavaScript**: Frontend for layout, styling, and interactivity.
-- **Bootstrap (optional)**: For responsive design (if you want to add it later).
+- **Bootstrap**: For responsive design.
 - **Python**: The language being compiled and executed.
 
 ---
