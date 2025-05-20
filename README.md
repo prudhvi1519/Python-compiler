@@ -93,4 +93,4 @@ An interactive Python code editor and compiler built with Django and CodeMirror.
 ---
 
 ## 📜 License
-This project is open-source and available under the MIT License.
+This project is open-source and available under the **MIT License**.
