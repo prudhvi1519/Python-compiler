@@ -26,7 +26,8 @@ def execute_code(code, user_input):
     return output
 
 def index(request):
-    return render(request, 'index.html')
+    default_code = '# Write your Python code here\nprint("Hello, World!")'
+    return render(request, 'index.html', {'code': default_code, 'output': '', 'userinput': ''})
 
 def runcode(request):
     if request.method == 'POST':
@@ -34,4 +35,4 @@ def runcode(request):
         user_input = request.POST.get('userinput', '')
         output = execute_code(code, user_input)
         return render(request, 'index.html', {'code': code, 'output': output, 'userinput': user_input})
-    return render(request, 'index.html')
+    return index(request)

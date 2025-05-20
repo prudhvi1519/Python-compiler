@@ -1,10 +1,20 @@
 var codeEditor = CodeMirror.fromTextArea(document.getElementById("codearea"), {
-    mode: "python",
     lineNumbers: true,
+    mode: "python",
+    theme: "default",
     indentUnit: 4,
-    extraKeys: { Tab: "indentMore", "Shift-Tab": "indentLess" },
+    indentWithTabs: false,
+    autofocus: true,
+    extraKeys: { Tab: "indentMore", "Shift-Tab": "indentLess" }
 });
+
 codeEditor.setSize("100%", "100%");
+
+// No need to set default value here anymore because Django sets it on page load
+
+document.querySelector('form').addEventListener('submit', function() {
+    codeEditor.save();  // sync editor content to textarea before submit
+});
 
 window.addEventListener('DOMContentLoaded', function () {
     const output = document.getElementById("output");

@@ -1,0 +1,59 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.envs/
+
+# Environment variables
+.env
+
+# SQLite database
+db.sqlite3
+
+# Django media folder (user uploads)
+media/
+
+# Django migrations (optional)
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Logs
+*.log
+
+# VSCode settings
+.vscode/
+
+# Node.js dependencies
+node_modules/
+
+# Build/dist folders
+dist/
+build/
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# pytest cache
+.pytest_cache/
+
+# mypy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# celery beat schedule
+celerybeat-schedule
