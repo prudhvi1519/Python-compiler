@@ -1,27 +1,29 @@
-# Python Compiler
+# Pins Studio
 
-An interactive Python code editor and compiler built with Django and CodeMirror.  
-**Users can write Python code, provide input, run the code, and see the output in a clean and user-friendly interface.**
+A social media platform for sharing and discovering creative pins, built with Django and Bootstrap.  
+**Users can upload images, search for pins, like, comment, and manage their profiles in a responsive, user-friendly interface.**
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **Django**: Python web framework powering the backend.
-- **CodeMirror**: A versatile code editor implemented in JavaScript for syntax highlighting and code editing.
-- **HTML/CSS/JavaScript**: Frontend for layout, styling, and interactivity.
-- **Bootstrap**: For responsive design.
-- **Python**: The language being compiled and executed.
+- **Django**: Python web framework for the backend.
+- **Bootstrap**: For responsive and modern UI design.
+- **HTML/CSS/JavaScript**: Frontend for layout, custom styling, and interactivity.
+- **CodeMirror** (optional, if used): For any code-related features or text editing.
+- **SQLite**: Default database for development (configurable for production).
 
 ---
 
 ## 🎮 Features
 
-- **Code Editor:** Syntax-highlighted Python code editor with line numbers and indentation support.
-- **User Input:** Ability to provide custom input for the Python program.
-- **Run Code:** Execute Python code on the server and display output.
-- **Output Display:** Shows output or errors with styled text area.
-- **Responsive Layout:** Works well on desktop and mobile devices.
+- **Pin Upload**: Users can upload images as pins with titles and descriptions.
+- **Search Pins**: Search functionality to find pins by keywords.
+- **Like & Comment**: Engage with pins through likes and comments.
+- **User Profiles**: View and edit user profiles, including password management.
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
+- **Authentication**: Secure user signup, login, and logout with Django’s auth system.
+- **Navbar Toggler**: Mobile-friendly navbar with a hamburger menu for navigation.
 
 ---
 
@@ -29,68 +31,72 @@ An interactive Python code editor and compiler built with Django and CodeMirror.
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/prudhvi1519/Python-compiler.git
-   ```
+   git clone https://github.com/your-username/pins-studio.git
 
-3. Navigate to the project directory:  
-   ```bash
-   cd "Python Compiler"
-   ```
 
-5. Create and activate a virtual environment (recommended):  
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/Mac
-   venv\Scripts\activate     # Windows
-   ```
+Navigate to the project directory:  
+cd pins-studio
 
-6. Install dependencies:  
-   ```bash
-   pip install -r requirements.txt
-   ```
-   > (If you don't have requirements.txt, install Django manually: `pip install django`)
 
-8. Run migrations:
-   ```bash
-   python manage.py migrate
-   ```
+Create and activate a virtual environment (recommended):  
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 
-9. Run the development server:
-   ```bash
-   python manage.py runserver
-   ```
 
-10. Open your browser and go to:
-    ```bash
-    http://127.0.0.1:8000/
-    ```
+Install dependencies:  
+pip install -r requirements.txt
 
----
 
-## 🤖 How It Works
+If requirements.txt is unavailable, install Django: pip install django
 
-- **Frontend:** Uses CodeMirror as the code editor with Python syntax highlighting.
-- **Backend:** Django receives the submitted code and user input, executes the code securely on the server.
-- **Output Handling:** The program output or error messages are sent back and displayed in the output textarea.
-- **Form Submission:** Uses POST requests with CSRF protection to run the code safely.
 
----
+Run migrations to set up the database:  
+python manage.py migrate
 
-## 👥 Contributing
 
-1. Fork the repository.
+Run the development server:  
+python manage.py runserver
 
-2. Clone your fork.
 
-3. Create a new branch (`git checkout -b feature-name`).
+Open your browser and visit:  
+http://127.0.0.1:8000/
 
-4. Make your changes and commit (`git commit -m "Add new feature"`).
 
-5. Push to your branch (`git push origin feature-name`).
 
-6. Create a pull request on GitHub.
 
----
+🤖 How It Works
 
-## 📜 License
-This project is open-source and available under the **MIT License**.
+Frontend: Uses Bootstrap for responsive layouts and custom CSS (customPinsStudio.css) for styling. The navbar includes a toggler for mobile navigation.
+Backend: Django handles user authentication, pin uploads, search queries, and comment/like interactions.
+Database: SQLite stores user data, pins, comments, and likes (configurable for PostgreSQL/MySQL in production).
+Form Handling: Secure POST requests with CSRF protection for uploads and comments.
+Responsive Navbar: A hamburger menu appears on mobile screens (<991px) for easy navigation.
+
+
+👥 Contributing
+
+Fork the repository.
+
+Clone your fork:  
+git clone https://github.com/your-username/pins-studio.git
+
+
+Create a new branch:  
+git checkout -b feature-name
+
+
+Make changes and commit:  
+git commit -m "Add new feature"
+
+
+Push to your branch:  
+git push origin feature-name
+
+
+Create a pull request on GitHub.
+
+
+
+📜 License
+This project is open-source and available under the MIT License.```
